@@ -8,5 +8,5 @@ class User(UserMixin, db.Model):
     name = db.Column(db.String(64), nullable=False)
     file = db.Column(db.String(128), default=None)
     email = db.Column(db.String(64), default=None)
-    xd_id = db.Column(db.Integer)
+    xd_id = db.Column(db.Integer, nullable=True)
     is_admin = db.Column(db.Boolean, default=False)

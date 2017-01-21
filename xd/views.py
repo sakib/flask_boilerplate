@@ -6,7 +6,7 @@ from flask_mail import Message
 from xd import app, lm, db, mail
 from werkzeug import secure_filename
 from oauth import OAuthSignIn
-from models import User, Announcement
+from models import User
 from collections import defaultdict
 import os, smtplib, json, datetime, requests, pprint
 from datetime import timedelta

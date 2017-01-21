@@ -4,7 +4,9 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 SECRET_KEY = 'xd'
 
-SQLALCHEMY_DATABASE_URI = ''
+SQLALCHEMY_DATABASE_URI = 'mysql://xd:xd@localhost/xd'
+
+SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
 
 OAUTH_CREDENTIALS = {
     'xd': {
@@ -13,10 +15,10 @@ OAUTH_CREDENTIALS = {
     }
 }
 
-UPLOAD_FOLDER = os.path.join(basedir, '')
+UPLOAD_FOLDER = os.path.join(basedir, 'uploads')
 
-LOG_FILENAME = ""
+LOG_FILENAME = "xd.log"
 
 LOG_FORMAT = ""
 
-ALLOWED_EXTENSIONS = []
+ALLOWED_EXTENSIONS = ["pdf"]
