@@ -53,7 +53,7 @@ Now we're ready to start our server which is as simple as:
 (venv) $ ./run.py
 ```
 
-If we want to expose this to a public facing URL, we can use Ngrok:
+If we want to expose this to a public facing URL, we can use [ngrok](https://ngrok.com/):
 
 ```
 (venv) $ ./ngrok http 5000
